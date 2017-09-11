@@ -1,2 +1,3 @@
 # Themes
-Setting themes to Android app.
+A sample android application to demonstrate about how to set themes to the app using styles.
+
