@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class ThemeChooserActivity extends BaseActivity {
 
@@ -12,6 +15,11 @@ public class ThemeChooserActivity extends BaseActivity {
         setTheme();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme_chooser);
+        Glide.with(this).load(R.drawable.theme_blue).into((ImageView) findViewById(R.id.Default));
+        Glide.with(this).load(R.drawable.theme_cyan).into((ImageView) findViewById(R.id.theme1));
+        Glide.with(this).load(R.drawable.theme_yellow).into((ImageView) findViewById(R.id.theme2));
+        Glide.with(this).load(R.drawable.theme_green).into((ImageView) findViewById(R.id.theme3));
+        Glide.with(this).load(R.drawable.theme_red).into((ImageView) findViewById(R.id.theme4));
     }
 
     public void Default(View v){
